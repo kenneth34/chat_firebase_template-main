@@ -92,7 +92,8 @@ return (
 	},
 }}
 	user={{
-	_id: 1,
+	_id: firebase.auth().currentUser?.uid,
+	name: firebase.auth().currentUser?.email,
 }}
 />
 )};
